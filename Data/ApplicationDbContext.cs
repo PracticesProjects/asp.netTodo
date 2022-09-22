@@ -5,7 +5,7 @@ using SagarNote.Models;
 
 namespace SagarNote.Data;
 
-public class ApplicationDbContext : IdentityDbContext
+public class ApplicationDbContext : IdentityDbContext<User>
 {
     public DbSet<Note>? SaagarNote{get; set;}
 
